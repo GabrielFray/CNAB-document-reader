@@ -19,6 +19,6 @@ class CnabUploadFileView(ListCreateAPIView):
         elif self.request.method == "POST":
             return CnabUploadFileSerializer
 
-    def perform_create(self):
+    def perform_create(self, serializer):
         upload_file = self.request.FILES["file_upload"]
         normalize_file_txt(upload_file)
