@@ -6,6 +6,8 @@ def normalize_file_txt(file) -> dict:
     format_file = read_file.split("\r\n")
 
     for line in format_file:
+        if len(line) < 62:
+            continue
         cnab_data = {
             "type": line[0],
             "date": f"{line[1:5]}-{line[5:7]}-{line[7:9]}",
