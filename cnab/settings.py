@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-6kxqif0w4xr53#^ll9=@lj(@vopffndvcpgevvqsohuj@5(rc-"
+SECRET_KEY = "django-insecure-0@*@ho#47jthmffaw*1+^d1_yn1w07d=e6pebp%l-phb-i3o$b"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -43,8 +43,10 @@ THIRD_PARTY_APPS = [
     "rest_framework",
 ]
 
-
-MY_APPS = ["cnab_transactions", "cnab_upload_file"]
+MY_APPS = [
+    "cnab_transactions",
+    "cnab_upload_file",
+]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + MY_APPS
 
