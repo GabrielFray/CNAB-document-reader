@@ -90,4 +90,45 @@ Quit the server with CTRL-BREAK.
 
 ## 4. Como usar
 
-- Para usar é bem simples, após o processo de instalção, 
+- Para usar essa aplicação é bem simples, após o processo de instalação, siga os seguintes passos.
+
+4.1 Se não estiver com o projeto rodando, rode o projeto com o comando no terminal 
+
+```
+python manage.py runserver
+```
+
+4.2 Logo após isso clique ou copie o url que aparecerá no console 
+
+```
+Starting development server at http://127.0.0.1:8000/
+```
+
+4.3 Adicione um ```api/``` no final da url
+
+```
+http://127.0.0.1:8000/api/
+```
+
+4.4 Na página estará um botão de ```Escolher arquivo``` clique nele 
+
+<a href="https://imgur.com/4kYVeGA"><img src="https://i.imgur.com/4kYVeGA.png" title="source: imgur.com" /></a>
+
+
+4.5 Selecione um arquivo CNAB com o final .txt
+
+<a href="https://imgur.com/ro8Nafv"><img src="https://i.imgur.com/ro8Nafv.png" title="source: imgur.com" /></a>
+
+4.6 Logo após, clique no botão ```POST``` assim ele irá normalizar o arquivo 
+
+<a href="https://imgur.com/S7zmKNe"><img src="https://i.imgur.com/S7zmKNe.png" title="source: imgur.com" /></a>
+
+4.7 E por fim, para retornar os dados normalizados e organizados, basta clicar no botão de ```GET``` 
+
+<a href="https://imgur.com/s8Sgzlf"><img src="https://i.imgur.com/s8Sgzlf.png" title="source: imgur.com" /></a>
+
+### Dados retornados após clicar no botão de ```GET```
+
+<a href="https://imgur.com/FpbWs7g"><img src="https://i.imgur.com/FpbWs7g.png" title="source: imgur.com" /></a>
+
+
