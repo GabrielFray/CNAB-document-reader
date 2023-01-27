@@ -35,21 +35,21 @@ Visão Geral das tecnologias usadas no projeto.
 
 <a name="install"></a>
 
-## 4. Instalação e uso
+## 3. Instalação e uso
 
-### 4.1 Requisitos
+### 3.1 Requisitos
 
 - Python a partir da versão 3.11.1
 - Gerenciador de pacotes pip
 
-### 4.2 Instalação
+### 3.2 Instalação
 
-4.2.1 - Clone o repositório crie um ambiente de desenvolvimento:
+3.2.1 - Clone o repositório crie um ambiente de desenvolvimento:
  ```
  python -m venv venv
  ```
  
- 4.2.3 - Após a criação do ambiente virtual voce terá que ativa-lo com o seguinte comando
+ 3.2.2 - Após a criação do ambiente virtual voce terá que ativa-lo com o seguinte comando
  
  para linux:
  ```
@@ -61,22 +61,22 @@ Visão Geral das tecnologias usadas no projeto.
  .\venv\Scripts\activate
  ```
  
- 4.2.4 - Agora que ja ativou o ambiênte de desenvolvimento voce terá que instalar as dependências do projeto
+ 3.2.3 - Agora que ja ativou o ambiênte de desenvolvimento voce terá que instalar as dependências do projeto
 ```
 pip install -r requirements.txt
 ```
 
-4.2.5 - Após instalar as dependências vamos persistir as migrations no banco de dados
+3.2.4 - Após instalar as dependências vamos persistir as migrations no banco de dados
 ```
 python manage.py migrate
 ```
 
-4.2.6 - Para rodar projeto utilize o comando 
+3.2.5 Para rodar projeto utilize o comando 
 ```
 python manage.py runserver
 ``` 
 
-4.2.8 - Caso de tudo certo receberá uma mensagem parecida com essa:
+3.2.6 - Caso de tudo certo receberá uma mensagem parecida com essa:
 
 ```
 System check identified no issues (0 silenced).
@@ -86,4 +86,8 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
 
+<a name="comousar"></a>
 
+## 4. Como usar
+
+- Para usar é bem simples, após o processo de instalção, 
