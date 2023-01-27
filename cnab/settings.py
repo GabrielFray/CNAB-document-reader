@@ -41,6 +41,7 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     "rest_framework",
+    "drf_spectacular",
 ]
 
 MY_APPS = [
@@ -62,6 +63,18 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "cnab.urls"
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "CNAB Document Reader",
+    "DESCRIPTION": "The program was developed with the aim of processing CNAB files, which contain data on financial transactions for several stores. It stores this data neatly and in an easy-to-read form in a relational database.",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
+    # OTHER SETTINGS
+}
 
 TEMPLATES = [
     {

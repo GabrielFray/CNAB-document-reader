@@ -1,0 +1,91 @@
+openapi: 3.0.3
+info:
+  title: CNAB Document Reader
+  version: 1.0.0
+  description: The program was developed with the aim of processing CNAB files, which
+    contain data on financial transactions for several stores. It stores this data
+    neatly and in an easy-to-read form in a relational database.
+paths:
+  /api/:
+    get:
+      operationId: api_list
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CnabTransactions'
+          description: ''
+    post:
+      operationId: api_create
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CnabUploadFile'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/CnabUploadFile'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/CnabUploadFile'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CnabUploadFile'
+          description: ''
+components:
+  schemas:
+    CnabTransactions:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        store:
+          type: string
+          maxLength: 19
+        currency:
+          type: string
+          readOnly: true
+        transactions:
+          type: string
+          readOnly: true
+      required:
+      - currency
+      - id
+      - store
+      - transactions
+    CnabUploadFile:
+      type: object
+      properties:
+        file_upload:
+          type: string
+          format: uri
+      required:
+      - file_upload
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid
