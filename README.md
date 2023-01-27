@@ -53,12 +53,12 @@ Visão Geral das tecnologias usadas no projeto.
  
  para linux:
  ```
- source/venv/bin/activate
+ source venv/bin/activate
  ```
  
  para windows:
  ```
- .\venv\Scripts\activate
+ source venv/Scripts/activate
  ```
  
  3.2.3 - Agora que ja ativou o ambiênte de desenvolvimento voce terá que instalar as dependências do projeto
