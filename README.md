@@ -6,7 +6,7 @@
 2. [Techs](#techs)
 3. [Instalação](#install)
 4. [Como usar](#comousar)
-5. [Desenvolvedores](#devs)
+5. [Desenvolvido por](#dev)
 6. [Termos de uso](#terms)
 
 
@@ -86,6 +86,8 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
 
+<a align="left" name="comousar"></a>
+
 <a name="comousar"></a>
 
 ## 4. Como usar
@@ -132,3 +134,16 @@ http://127.0.0.1:8000/api/
 <a href="https://imgur.com/FpbWs7g"><img src="https://i.imgur.com/FpbWs7g.png" title="source: imgur.com" /></a>
 
 
+<a name="devs"></a>
+
+## 5. Desenvolvido por
+
+[Voltar para o topo](#tabela-de-conteúdos)
+
+- <a name="Gabriel-fray" href="https://www.linkedin.com/in/gabrielfray/" target="_blank">Gabriel Fray</a>
+
+<a name="terms"></a>
+
+## 6. Termos de uso
+
+Este é um projeto Open Source para fins educacionais e não comerciais, **Tipo de licença** - <a name="mit" href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>
