@@ -19,6 +19,8 @@
 - O programa foi desenvolvido com o objetivo de processar arquivos CNAB, que contêm dados sobre movimentações financeiras de várias lojas. Ele armazena esses dados de forma organizada e de fácil leitura em um banco de dados relacional. 
 - Para facilitar o uso do programa, foi criada uma interface web que permite o upload do arquivo CNAB. O arquivo é processado, os dados são normalizados e armazenados no banco de dados. As informações processadas podem ser visualizadas na tela.
 
+<a name="techs"></a>
+
 ## 3. Techs
 
 Visão Geral das tecnologias usadas no projeto.
