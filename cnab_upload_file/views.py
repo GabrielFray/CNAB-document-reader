@@ -1,4 +1,4 @@
-from utils.normalize import normalize_file_txt
+from .utils import normalize_file_txt
 from .serializers import CnabUploadFileSerializer
 from rest_framework.generics import ListCreateAPIView
 from cnab_transactions.models import CnabTransactions
